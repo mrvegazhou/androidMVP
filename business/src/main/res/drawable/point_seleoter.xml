@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 状态启用时所显示的形状  -->
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/point_enable_shape"
+        ></item>
+
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/point_not_enabled_shape"
+        ></item>
+
+</selector>

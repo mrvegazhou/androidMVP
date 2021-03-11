@@ -1,0 +1,3 @@
+include ':corelib'
+include ':business'
+rootProject.name = "EffortApp"

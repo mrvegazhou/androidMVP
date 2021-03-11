@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    >
+    <!--oval 表示设置形状为圆形  -->
+    <!--radius 表示设置圆形的半径为5dp  -->
+    <corners
+        android:radius="5dp"
+        ></corners>
+
+    <!-- color 表示设置该形状的颜色为灰色
+     @android:color/darker_gray
+     -->
+    <solid
+        android:color="@android:color/white"
+        ></solid>
+
+
+</shape>

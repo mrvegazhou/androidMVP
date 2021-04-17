@@ -62,6 +62,9 @@ dependencies {
     api rootProject.ext.dependencies['rxlifecycle']
     api rootProject.ext.dependencies['rxlifecycle-components']
     implementation rootProject.ext.dependencies['appcompat']
+    implementation rootProject.ext.dependencies['mmkv']
+    api rootProject.ext.dependencies['stream']
+
 //    api rootProject.ext.dependencies['photoView']
     /*eventBus*/
     api rootProject.ext.dependencies['eventbus']

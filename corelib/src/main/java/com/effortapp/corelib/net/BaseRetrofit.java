@@ -4,7 +4,7 @@ import com.effortapp.corelib.app.AppConfig;
 import com.effortapp.corelib.app.BaseApplication;
 import com.effortapp.corelib.net.converter.GsonConverterBodyFactory;
 import com.effortapp.corelib.net.interceptor.CaheInterceptor;
-import com.effortapp.corelib.cache.CacheUtil;
+import com.effortapp.corelib.cache.cacheUtil.CacheUtil;
 import com.effortapp.corelib.net.mock.SimpleMockInterceptor;
 import com.effortapp.corelib.net.retrofitUrlManager.RetrofitUrlManager;
 

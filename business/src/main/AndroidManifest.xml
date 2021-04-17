@@ -8,7 +8,15 @@
     <application
         android:name=".MyApplication"
         android:theme="@android:style/Theme.NoTitleBar">
-        <activity android:name=".view.guide.SplashActivity"
+<!--        <activity android:name=".view.guide.SplashActivity"-->
+<!--            android:theme="@style/Theme.AppCompat.Light.NoActionBar"-->
+<!--            android:label="@string/app_name">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+        <activity android:name=".view.MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:label="@string/app_name">
             <intent-filter>
@@ -17,13 +25,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.guide.GuideActivity"></activity>
-        <activity
-            android:name=".view.MainActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:label="@string/app_name"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+<!--        <activity android:name=".widget.mainHeader.TestActivity"></activity>-->
+<!--        <activity-->
+<!--            android:name=".view.MainActivity"-->
+<!--            android:launchMode="singleTask"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:theme="@style/Theme.AppCompat.Light.NoActionBar"-->
+<!--            android:label="@string/app_name"-->
+<!--            android:windowSoftInputMode="adjustUnspecified|stateHidden" />-->
 
         <!--全面屏问题-->
         <meta-data

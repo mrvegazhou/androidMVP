@@ -5,9 +5,9 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Bundle;
 
-import com.effortapp.corelib.cache.CacheUtil;
-import com.effortapp.corelib.cache.CacheUtilConfig;
-import com.effortapp.corelib.cache.strategy.KeyStoreEncryptStrategy;
+import com.effortapp.corelib.cache.cacheUtil.CacheUtil;
+import com.effortapp.corelib.cache.cacheUtil.CacheUtilConfig;
+import com.effortapp.corelib.cache.cacheUtil.strategy.KeyStoreEncryptStrategy;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 

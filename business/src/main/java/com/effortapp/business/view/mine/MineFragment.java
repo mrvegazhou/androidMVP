@@ -1,17 +1,25 @@
 package com.effortapp.business.view.mine;
 
-import com.effortapp.business.databinding.FragmentMineBinding;
+import android.os.Bundle;
+
+import com.effortapp.business.databinding.MineFragmentBinding;
 import com.effortapp.corelib.base.BaseFragment;
 
-public class MineFragment extends BaseFragment<MinePresenter, FragmentMineBinding> {
+public class MineFragment extends BaseFragment<MinePresenter, MineFragmentBinding> {
+
+    private String mTitle;
+
     @Override
     protected void initData() {
 
     }
 
-    @Override
-    protected int getLayoutId() {
-        return 0;
+    public static MineFragment getInstance(String title) {
+        MineFragment fragment = new MineFragment();
+        Bundle bundle = new Bundle();
+        fragment.setArguments(bundle);
+        fragment.mTitle = title;
+        return fragment;
     }
 
     @Override

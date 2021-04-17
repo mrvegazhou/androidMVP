@@ -4,8 +4,8 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
-import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 
 import com.effortapp.corelib.app.BaseApplication;
@@ -31,7 +31,6 @@ public abstract class BaseActivity extends RxAppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mContext = BaseApplication.getContext();
-
         initView();
         initData();
         initListener();

@@ -1,6 +1,5 @@
 package com.effortapp.business.view.guide;
 
-import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -100,7 +99,7 @@ public class GuideActivity extends BaseActivity {
             pointView.setBackgroundResource(R.drawable.point_seleoter);
             //指针的宽度和高度
             layoutParams = new LinearLayout.LayoutParams(CommonUtils.dp2px(5), CommonUtils.dp2px(5));
-            if (i==0){
+            if (i==0) {
                 pointView.setEnabled(true);
             } else {
                 //指针距离左边的间距

@@ -37,7 +37,13 @@ ext {
             'leakcanary': 'com.squareup.leakcanary:leakcanary-android:1.6.1',
             'leakcanary-android-no-op': 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1',
             'leakcanary-support-fragment': 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.1',
-            'multidex': 'com.android.support:multidex:1.0.3'
+            'multidex': 'com.android.support:multidex:1.0.3',
+            'mmkv': 'com.tencent:mmkv-static:1.2.7',
+            'noober': 'com.noober.background:core:1.6.5',
+            'baseRecyclerViewAdapterHelper': 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4',
+            "smartRefreshLayout" : "com.scwang.smart:refresh-layout-kernel:2.0.3",
+            "smartRefreshHeader" : "com.scwang.smart:refresh-header-classics:2.0.3",
+            "stream": "com.annimon:stream:1.2.2"
     ]
 
 }

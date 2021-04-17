@@ -1,6 +1,7 @@
 package com.effortapp.corelib.base;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 
 import androidx.annotation.Nullable;
@@ -12,6 +13,7 @@ import com.effortapp.corelib.mvp.IView;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 
 public abstract class BaseMvpActivity<T extends BasePresenter, V extends ViewBinding> extends BaseActivity implements IView {
     protected T mPresenter;
@@ -19,7 +21,6 @@ public abstract class BaseMvpActivity<T extends BasePresenter, V extends ViewBin
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
 
         ParameterizedType type = (ParameterizedType) getClass().getGenericSuperclass();
         Class cls = (Class) type.getActualTypeArguments()[1];
@@ -35,6 +36,8 @@ public abstract class BaseMvpActivity<T extends BasePresenter, V extends ViewBin
         if (mPresenter != null) {
             mPresenter.attachView(this);
         }
+
+        super.onCreate(savedInstanceState);
     }
 
     protected abstract T createPresenter();

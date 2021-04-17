@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tools"
+        android:title="工具"
+        android:icon="@drawable/main_bottom_item"/>
+    <item
+        android:id="@+id/social"
+        android:title="社交"
+        android:icon="@drawable/main_bottom_item"/>
+    <item
+        android:id="@+id/me"
+        android:title="我"
+        android:icon="@drawable/main_bottom_item"/>
+</menu>

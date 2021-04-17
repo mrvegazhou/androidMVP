@@ -1,6 +1,5 @@
 package com.effortapp.business.view.guide;
 
-import android.content.Intent;
 import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;

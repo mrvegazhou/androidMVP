@@ -1,0 +1,6 @@
+<resources>
+    <style name="ToolbarThemeWhite" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">#09bb07</item>
+        <item name="subtitleTextColor">#09bb07</item>
+    </style>
+</resources>

@@ -20,7 +20,7 @@ import android.text.TextUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.effortapp.corelib.cache.CacheUtil;
+import com.effortapp.corelib.cache.cacheUtil.CacheUtil;
 import com.effortapp.corelib.net.retrofitUrlManager.RetrofitUrlManager;
 import okhttp3.HttpUrl;
 

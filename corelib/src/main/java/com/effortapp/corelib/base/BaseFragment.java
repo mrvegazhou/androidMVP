@@ -3,6 +3,7 @@ package com.effortapp.corelib.base;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 
-import com.trello.rxlifecycle4.components.RxFragment;
+import com.trello.rxlifecycle4.components.support.RxFragment;
 import com.effortapp.corelib.mvp.BasePresenter;
 import com.effortapp.corelib.mvp.IView;
 
@@ -50,7 +51,6 @@ public abstract class BaseFragment<T extends BasePresenter, V extends ViewBindin
                 e.printStackTrace();
             }
             mRootView = viewBinding.getRoot();
-
             if (useEventBus()) {
                 EventBus.getDefault().register(this);//注册eventBus
             }
@@ -59,6 +59,7 @@ public abstract class BaseFragment<T extends BasePresenter, V extends ViewBindin
         if(parent!=null) {
             parent.removeView(mRootView);
         }
+        initView(inflater);
         return mRootView;
     }
 
@@ -120,11 +121,6 @@ public abstract class BaseFragment<T extends BasePresenter, V extends ViewBindin
      */
     protected abstract void initData();
 
-    /**
-     * 返回一个用于显示界面的布局id
-     */
-    protected abstract @LayoutRes int getLayoutId();
-
     protected abstract boolean useEventBus();
 
     protected abstract T createPresenter();
@@ -133,6 +129,10 @@ public abstract class BaseFragment<T extends BasePresenter, V extends ViewBindin
      * 初始化View的代码写在这个方法中
      */
     protected abstract void initView();
+
+    protected void initView(LayoutInflater inflater) {
+
+    }
 
     /**
      * 初始化监听器的代码写在这个方法中
